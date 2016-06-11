@@ -1,7 +1,7 @@
 var Sequelize = require('sequelize');
 
 // Initializes the databases
-module.exports = new Sequelize('database', 'username', 'password', {
+module.exports = new Sequelize('coach_development', 'coach', 'password', {
   host: 'localhost',
   dialect: 'postgres',
 
