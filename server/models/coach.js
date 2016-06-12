@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
-        Coach.belongsToMany(models.Team, { through: 'TeamCoach', foreignKey: 'coach_id', otherKey: 'team_id'} );
+        Coach.belongsToMany(models.Team, { through: 'TeamCoach', foreignKey: 'coach_id'} );
 
       }
     }

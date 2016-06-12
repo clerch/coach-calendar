@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
-        PlayerRole.belongsTo(models.TeamPlayer, {foreignKey: player_role_id});
+        PlayerRole.hasMany(models.TeamPlayer, {foreignKey: player_role_id});
 
       }
     }

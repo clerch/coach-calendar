@@ -10,8 +10,10 @@ module.exports = {
       },
       team_id: {
         type: Sequelize.INTEGER,
-        references: 'teams',
-        referencesKey: 'id'
+        references: {
+          model: 'Teams',
+          key: 'id'
+        }
       },
       resource_type: {
         type: Sequelize.STRING

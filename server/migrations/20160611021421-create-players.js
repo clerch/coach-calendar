@@ -8,11 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      team_id: {
-        type: Sequelize.INTEGER,
-        references: 'teams',
-        referencesKey: 'id'
-      },
       name: {
         type: Sequelize.STRING
       },

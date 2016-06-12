@@ -10,8 +10,10 @@ module.exports = {
       },
       player_id: {
         type: Sequelize.INTEGER,
-        references: 'players',
-        referencesKey: 'id'
+        references: {
+          model: 'Players',
+          key: 'id'
+        }
       },
       course: {
         type: Sequelize.STRING

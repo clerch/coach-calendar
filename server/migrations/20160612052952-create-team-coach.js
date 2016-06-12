@@ -10,18 +10,24 @@ module.exports = {
       },
       team_id: {
         type: Sequelize.INTEGER,
-        references: 'teams',
-        referencesKey: 'id'
+        references: {
+          model: 'Teams',
+          key: 'id'
+        }
       },
       coach_id: {
         type: Sequelize.INTEGER,
-        references: 'coaches',
-        referencesKey: 'id'
+        references: {
+          model: 'Coaches',
+          key: 'id'
+        }
       },
       coach_role_id: {
         type: Sequelize.INTEGER,
-        references: 'coachroles',
-        referencesKey: 'id'
+        references: {
+          model: 'CoachRoles',
+          key: 'id'
+        }
       },
       createdAt: {
         allowNull: false,
