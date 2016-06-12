@@ -9,7 +9,9 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       player_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: 'players',
+        referencesKey: 'id'
       },
       course: {
         type: Sequelize.STRING

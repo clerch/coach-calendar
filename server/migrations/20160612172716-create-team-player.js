@@ -9,10 +9,14 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       team_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: 'teams',
+        referencesKey: 'id'
       },
       player_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: 'players'
+        referencesKey: 'id'
       },
       position: {
         type: Sequelize.STRING

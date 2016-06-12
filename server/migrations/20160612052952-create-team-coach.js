@@ -9,13 +9,19 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       team_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: 'teams',
+        referencesKey: 'id'
       },
       coach_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: 'coaches',
+        referencesKey: 'id'
       },
       coach_role_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: 'coachroles',
+        referencesKey: 'id'
       },
       createdAt: {
         allowNull: false,
