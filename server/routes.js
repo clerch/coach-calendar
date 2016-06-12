@@ -3,9 +3,9 @@ var router = express.Router();
 
 //this is where you will add more controllers
 var homeController = require('./controllers/homeController');
-var usersController = require('./controllers/usersController');
+var playerController = require('./controllers/playerController');
 
 router.get('/', homeController.index);
-router.get('/users', usersController.index);
+router.get('/player', playerController.index);
 
 module.exports = router;
