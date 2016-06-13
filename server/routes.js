@@ -7,5 +7,7 @@ var playerController = require('./controllers/playerController');
 
 router.get('/', homeController.index);
 router.get('/player', playerController.index);
+router.get('/player/:id', playerController.read);
 
 module.exports = router;
+

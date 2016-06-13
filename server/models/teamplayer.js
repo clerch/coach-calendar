@@ -11,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
         // models.Team.belongsToMany(models.Player,{as:'Players', through:{model:TeamPlayer, unique: false},foreignKey:'team_id'});
         // models.Player.belongsToMany(models.Teams,{as:'Teams', through:{model:TeamPlayer, unique: false},foreignKey:'player_id'});
 
-        TeamPlayer.belongsTo(models.PlayerRole);
+        // TeamPlayer.belongsTo(models.PlayerRoles);
       }
     }
   });

@@ -14,11 +14,11 @@ module.exports = {
     */
     return [
       queryInterface.bulkInsert('TeamCoaches', [
-        { team_id: 1, coach_id: 1, createdAt: new Date(), updatedAt: new Date() },
-        { team_id: 1, coach_id: 2, createdAt: new Date(), updatedAt: new Date() },
-        { team_id: 2, coach_id: 3, createdAt: new Date(), updatedAt: new Date() },
-        { team_id: 2, coach_id: 4, createdAt: new Date(), updatedAt: new Date() },
-        { team_id: 3, coach_id: 5, createdAt: new Date(), updatedAt: new Date() },
+        { team_id: 1, coach_id: 1, coach_role_id: 1, createdAt: new Date(), updatedAt: new Date() },
+        { team_id: 1, coach_id: 2, coach_role_id: 2, createdAt: new Date(), updatedAt: new Date() },
+        { team_id: 2, coach_id: 3, coach_role_id: 6, createdAt: new Date(), updatedAt: new Date() },
+        { team_id: 2, coach_id: 4, coach_role_id: 4, createdAt: new Date(), updatedAt: new Date() },
+        { team_id: 3, coach_id: 5, coach_role_id: 5, createdAt: new Date(), updatedAt: new Date() },
       ])
     ];
 

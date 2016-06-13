@@ -1,7 +1,6 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Player = sequelize.define('Players', {
-    team_id: DataTypes.INTEGER,
     name: DataTypes.STRING,
     email: DataTypes.STRING,
     password: DataTypes.STRING
@@ -9,10 +8,10 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
-        Player.belongsToMany(models.Team, { through: 'TeamPlayer', foreignKey: 'player_id', otherKey: 'team_id'} );
-        Player.hasMany(models.Grade);
+        Player.belongsToMany(models.Teams, { through: 'TeamPlayer', foreignKey: 'player_id', otherKey: 'team_id'} );
+        Player.hasMany(models.Grades);
       }
     }
   });
-  return Player;
+  return Player;  
 };
