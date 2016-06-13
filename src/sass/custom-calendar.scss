@@ -1,3 +1,5 @@
+$default-event-color: rgba(30, 100, 200, 0.3);
+
 .rbc-btn {
   color: inherit;
   font: inherit;
@@ -163,8 +165,8 @@ button.rbc-input::-moz-focus-inner {
 .rbc-event {
   cursor: pointer;
   padding: 2px 5px;
-  background-color: #3174ad;
-  border-radius: 5px;
+  background-color: $default-event-color;
+  border: 0px !important;
   color: #fff;
 }
 .rbc-event.rbc-selected {

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --hot --port 3000"
+    "start": "webpack-dev-server --hot"
   },
   "dependencies": {
     "babel-core": "^6.9.1",

@@ -43,7 +43,19 @@ export default [
   {
     'title': 'Lunch',
     'start':new Date(2016, 5, 12, 12, 0, 0, 0),
-    'end': new Date(2016, 5, 12, 13, 0, 0, 0),
+    'end': new Date(2016, 5, 12, 16, 0, 0, 0),
+    desc: 'Power lunch'
+  },
+  {
+    'title': 'Lunch',
+    'start':new Date(2016, 5, 12, 12, 0, 0, 0),
+    'end': new Date(2016, 5, 12, 15, 0, 0, 0),
+    desc: 'Power lunch'
+  },
+  {
+    'title': 'Lunch',
+    'start':new Date(2016, 5, 12, 12, 0, 0, 0),
+    'end': new Date(2016, 5, 12, 14, 0, 0, 0),
     desc: 'Power lunch'
   },
   {
