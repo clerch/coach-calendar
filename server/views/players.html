@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<!-- Bootstrap -->
+  <link rel="stylesheet" href="../../public/stylesheets/vendors/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../public/stylesheets/vendors/css/bootstrap-theme.css">
+<!-- custom-->
+<link rel="stylesheet" type="text/css" href="../../public/stylesheets/players.css">
+
+
+<head>
+  <title>Coach</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Coach-App Home</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../navbar-static-top/">Resources</a></li>
+              <li><a href="../navbar-fixed-top/">Logout</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notifications<span class="badge">4</span></a>
+                  <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="calendar">
+        <h1>Calendar</h1>
+<!--         <img src="../../public/images/resize2.jpg"> -->
+      </div>
+      <div class="player-schedule">
+        <table id="class-schedule">
+          <tr>
+           <th>Class</th>
+           <th>Days</th>
+           <th>Time</th>
+          </tr>
+          <tr>
+              <td>Eng 303</td>
+              <td>MWF</td> 
+              <td>12:30-1:30</td>
+          </tr>
+          <tr>
+            <td>Bus 300</td>
+            <td>TTh</td> 
+            <td>10:00-11:45</td>
+          </tr>
+          <tr>
+            <td>Bus 360</td>
+            <td>MWF</td> 
+            <td>9:00-10:00</td>
+          </tr>
+          <tr>
+            <td>Bus 305</td>
+            <td>T</td> 
+            <td>7:00-9:45</td>
+          </tr>
+        </table>
+        <button type="button" class="btn btn-success">Add</button>
+      </div>      
+      <div class="player-grade" overflow-x:auto>
+        <table id="grades">
+          <tr>
+           <th>Class</th>
+           <th>Assignment</th>
+           <th>Grade</th>
+          </tr>
+          <tr>
+              <td>Eng 303</td>
+              <td>Midterm</td> 
+              <td>71%</td>
+          </tr>
+          <tr>
+            <td>Bus 300</td>
+            <td>Midterm</td> 
+            <td>85%</td>
+          </tr>
+          <tr>
+            <td>Bus 360</td>
+            <td>Paper</td> 
+            <td>65%</td>
+          </tr>
+          <tr>
+            <td>Bus 305</td>
+            <td>Paper</td> 
+            <td>67%</td>
+          </tr>
+        </table>
+        <button type="button" class="btn btn-success">Add</button>
+      </div>
+
+    </div> <!-- /container -->
+
+
+
+
+
+
+</body>
+</html>
