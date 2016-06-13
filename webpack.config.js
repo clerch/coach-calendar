@@ -35,6 +35,10 @@ var config = {
     {
       test: /\.scss$/,
       loader: ExtractTextPlugin.extract('css!sass')
+    },
+    {
+      test: /\.less$/,
+      loader: "style!css!less"
     }]
   },
   plugins: [
