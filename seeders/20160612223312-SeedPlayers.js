@@ -21,7 +21,15 @@ module.exports = {
         { name: "player5", email: "player5@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
         { name: "player6", email: "player6@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
         { name: "player7", email: "player7@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
-        { name: "player7", email: "player8@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
+        { name: "player8", email: "player8@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
+        { name: "player9", email: "player9@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
+        { name: "player10", email: "player10@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
+        { name: "player11", email: "player11@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
+        { name: "player12", email: "player12@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
+        { name: "player13", email: "player13@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
+        { name: "player14", email: "player14@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
+        { name: "player15", email: "player15@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
+        { name: "player16", email: "player16@example.com", password: "12345", createdAt: new Date(), updatedAt: new Date()},
       ])
     ];
 

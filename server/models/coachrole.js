@@ -1,7 +1,6 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var CoachRole = sequelize.define('CoachRoles', {
-    coach_role_id: DataTypes.INTEGER,
     role: DataTypes.STRING
   }, {
     classMethods: {

@@ -9,6 +9,8 @@ module.exports = function(sequelize, DataTypes) {
       associate: function(models) {
         // associations can be defined here
         Player.belongsToMany(models.Teams, { through: 'TeamPlayer', foreignKey: 'player_id', otherKey: 'team_id'} );
+        Player.belongsToMany(models.PlayerRoles, { through: 'TeamPlayer', foreignKey: 'player_id', otherKey: 'player_role_id'} );
+
         Player.hasMany(models.Grades);
       }
     }
