@@ -42,20 +42,44 @@ export default [
   },
   {
     'title': 'Lunch',
-    'start':new Date(2016, 5, 12, 12, 0, 0, 0),
-    'end': new Date(2016, 5, 12, 16, 0, 0, 0),
+    'start':new Date(2016, 5, 15, 6, 0, 0, 0),
+    'end': new Date(2016, 5, 15, 18, 0, 0, 0),
     desc: 'Power lunch'
   },
   {
     'title': 'Lunch',
-    'start':new Date(2016, 5, 12, 12, 0, 0, 0),
-    'end': new Date(2016, 5, 12, 15, 0, 0, 0),
+    'start':new Date(2016, 5, 15, 7, 0, 0, 0),
+    'end': new Date(2016, 5, 15, 17, 0, 0, 0),
     desc: 'Power lunch'
   },
   {
     'title': 'Lunch',
-    'start':new Date(2016, 5, 12, 12, 0, 0, 0),
-    'end': new Date(2016, 5, 12, 14, 0, 0, 0),
+    'start':new Date(2016, 5, 15, 8, 0, 0, 0),
+    'end': new Date(2016, 5, 15, 16, 0, 0, 0),
+    desc: 'Power lunch'
+  },
+  {
+    'title': 'Lunch',
+    'start':new Date(2016, 5, 15, 9, 0, 0, 0),
+    'end': new Date(2016, 5, 15, 15, 0, 0, 0),
+    desc: 'Power lunch'
+  },
+  {
+    'title': 'Lunch',
+    'start':new Date(2016, 5, 15, 10, 0, 0, 0),
+    'end': new Date(2016, 5, 15, 14, 0, 0, 0),
+    desc: 'Power lunch'
+  },
+  {
+    'title': 'Lunch',
+    'start':new Date(2016, 5, 15, 11, 0, 0, 0),
+    'end': new Date(2016, 5, 15, 13, 0, 0, 0),
+    desc: 'Power lunch'
+  },
+  {
+    'title': 'Lunch',
+    'start':new Date(2016, 5, 15, 12, 0, 0, 0),
+    'end': new Date(2016, 5, 15, 13, 0, 0, 0),
     desc: 'Power lunch'
   },
   {

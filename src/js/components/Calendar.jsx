@@ -8,13 +8,13 @@ BigCalendar.momentLocalizer(moment);
 export default class Calendar extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{height: 550}}>
         <BigCalendar
           selectable
           events={events}
           defaultView='week'
-          min={new Date(0, 0, 0, 5)}
-          max={new Date(0, 0, 0, 22)}
+          min={new Date(0, 0, 0, 4)}
+          max={new Date(0, 0, 0, 23)}
         />
       </div>
     );

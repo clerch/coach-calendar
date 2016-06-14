@@ -1,8 +1,13 @@
-$main-bg-color: white;
+@import './variables';
+@import './components/player-box';
 
 body {
   background-color: $main-bg-color;
+  padding:20px;
 }
 #main-cal {
-  width: 600px;
+  width: 650px;
+  display:inline-block;
+  position:absolute;
+  margin-left: 40px;
 }
