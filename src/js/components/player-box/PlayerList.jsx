@@ -8,11 +8,6 @@ export default class PlayerList extends React.Component {
         <Player
           key={player.id}
           calId={player.calId}
-          passIdToBox={
-            function(id) {
-              this.props.passIdToApp(id)
-            }.bind(this)
-          }
         >
           {player.name}
         </Player>
