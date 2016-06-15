@@ -9,7 +9,6 @@ module.exports = function(sequelize, DataTypes) {
       associate: function(models) {
         // associations can be defined here
         Coach.belongsToMany(models.Teams, { through: 'TeamCoach', foreignKey: 'coach_id', otherKey: 'team_id'} );
-        Coach.belongsToMany(models.CoachRoles, { through: 'TeamCoach', foreignKey: 'coach_id', otherKey: 'coach_role_id'} );
       }
     }
   });

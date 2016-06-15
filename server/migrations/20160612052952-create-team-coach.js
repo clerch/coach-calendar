@@ -22,13 +22,6 @@ module.exports = {
           key: 'id'
         }
       },
-      coach_role_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: 'CoachRoles',
-          key: 'id'
-        }
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

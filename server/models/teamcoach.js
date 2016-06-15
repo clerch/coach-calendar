@@ -2,8 +2,7 @@
 module.exports = function(sequelize, DataTypes) {
   var TeamCoach = sequelize.define('TeamCoach', {
     team_id: DataTypes.INTEGER,
-    coach_id: DataTypes.INTEGER,
-    coach_role_id: DataTypes.INTEGER
+    coach_id: DataTypes.INTEGER
   }, {
     classMethods: {
       associate: function(models) {
