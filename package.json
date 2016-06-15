@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --host 0.0.0.0 --hot"
   },
   "dependencies": {
     "babel-core": "^6.9.1",

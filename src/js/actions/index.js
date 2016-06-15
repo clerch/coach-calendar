@@ -4,3 +4,15 @@ export function showPlayerSchedule(id) {
     id: id
   }
 }
+
+export function addTeamEvent(event) {
+  var newEvent = {
+    start: event.start,
+    end: event.end,
+    player: 100
+  }
+  return {
+    type: 'ADD_TEAM_EVENT',
+    event: newEvent
+  }
+}

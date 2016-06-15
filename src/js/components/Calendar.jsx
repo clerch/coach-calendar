@@ -1,17 +1,22 @@
 import React from 'react';
 import BigCalendar from 'react-big-calendar';
 import moment from 'moment';
-import events from '../../../test_data/player_events.js';
+import { connect } from 'react-redux'
+import { addTeamEvent } from '../actions/index'
 
 BigCalendar.momentLocalizer(moment);
 
-export default class Calendar extends React.Component {
+class Calendar extends React.Component {
   render() {
     return (
       <div className="mainCalendar" style={{height: 550}}>
         <BigCalendar
           selectable
           events={this.props.events}
+          onSelectEvent={event => console.log(event.start)}
+          onSelectSlot={function(slotInfo) {
+            this.props.dispatch(addTeamEvent(slotInfo))
+          }.bind(this)}
           defaultView='week'
           min={new Date(0, 0, 0, 4)}
           max={new Date(0, 0, 0, 23)}
@@ -20,3 +25,4 @@ export default class Calendar extends React.Component {
     );
   }
 }
+export default connect()(Calendar)
