@@ -39,7 +39,12 @@ var config = {
     {
       test: /\.less$/,
       loader: "style!css!less"
-    }]
+    },
+    {
+      test: /\.json$/,
+      loader: 'json'
+    }
+    ]
   },
   plugins: [
     new ExtractTextPlugin('public/style.css',
