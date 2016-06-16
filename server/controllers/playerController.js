@@ -11,6 +11,7 @@ module.exports = {
           var team = teams[0];
           team.getCoaches().then(function(coaches) {
             var coach = coaches[0];
+            
             res.render('player', { 'player': player, 'team': team, 'coach': coach});  
           });
       });
