@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import reducer from './reducers/index'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, Link, hashHistory } from 'react-router'
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 import TeamViewContainer from './containers/TeamViewContainer.jsx'
+import EditorViewContainer from './containers/EditorViewContainer.jsx'
 
 
 const Message = React.createClass({
@@ -18,10 +19,10 @@ let store = createStore(reducer)
 
 ReactDOM.render((
   <Provider store={store}>
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
       <Route path="/" component={TeamViewContainer}>
       </Route>
-      <Route path="/players" component={Message} />
+      <Route path="/editor" component={EditorViewContainer} />
     </Router>
   </Provider>
 ), document.getElementById('root'))
