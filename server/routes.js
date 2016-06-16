@@ -5,11 +5,13 @@ var router = express.Router();
 var homeController = require('./controllers/homeController');
 var playerController = require('./controllers/playerController');
 var testController = require('./controllers/testController');
+var teamController = require('./controllers/teamController');
 
 router.get('/', homeController.index);
 router.get('/player', playerController.index);
 router.get('/player/:id', playerController.read);
 router.get('/test', testController.index);
+router.get('/team/:id', teamController.read);
 
 module.exports = router;
 
