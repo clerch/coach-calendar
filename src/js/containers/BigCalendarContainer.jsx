@@ -40,12 +40,7 @@ class Calendar extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    // events: state.playerSchedule === null ?
-    // // All player schedules displayed when activePlayer is null
-    // googleEvents :
-    // // Otherwise it shows the activePlayer's schedule
-    // googleEvents.filter((x) => x.player === state.playerSchedule)
-    events: state.coach.teamEvents
+    events: state.team.visibleEvents.team.concat(state.team.visibleEvents.player)
   }
 }
 

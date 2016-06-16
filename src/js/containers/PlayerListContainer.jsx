@@ -27,7 +27,7 @@ class PlayerListContainer extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    data: state.coach.playerList
+    data: state.team.playerList
   }
 }
 
