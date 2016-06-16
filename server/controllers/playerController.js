@@ -17,3 +17,11 @@ module.exports = {
     });
   }
 };
+
+
+
+// Notes:
+// var data = {"developer": "Krasimir Tsonev"};
+// response.contentType('application/json');
+// response.send(JSON.stringify(data));
+// http://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm

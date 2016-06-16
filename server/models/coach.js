@@ -3,7 +3,10 @@ module.exports = function(sequelize, DataTypes) {
   var Coach = sequelize.define('Coaches', {
     name: DataTypes.STRING,
     email: DataTypes.STRING,
-    password: DataTypes.STRING
+    password: DataTypes.STRING, 
+    access_token: DataTypes.STRING,
+    refresh_token: DataTypes.STRING,
+    token_expiry_date: DataTypes.DATEONLY
   }, {
     classMethods: {
       associate: function(models) {
