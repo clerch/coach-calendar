@@ -5,14 +5,14 @@ import CalendarControlPanel from '../components/CalendarControlPanel.jsx'
 class CalendarControlPanelContainer extends React.Component {
   render() {
     return(
-      <CalendarControlPanel data={this.props.data}/>
+      <CalendarControlPanel />
     )
   }
 }
 
 function mapStateToProps(state) {
   return {
-    data: ['Team Schedule','Player Schedule']
+
   }
 }
 

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import coach from './coach'
+import team from './team'
 
 export default combineReducers({
-  coach
+  team
 })

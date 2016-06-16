@@ -5,7 +5,7 @@ import { createStore } from 'redux'
 import reducer from './reducers/index'
 import { Router, Route, Link, browserHistory } from 'react-router'
 import createBrowserHistory from 'history/lib/createBrowserHistory';
-import CoachViewContainer from './containers/CoachViewContainer.jsx'
+import TeamViewContainer from './containers/TeamViewContainer.jsx'
 
 
 const Message = React.createClass({
@@ -19,10 +19,9 @@ let store = createStore(reducer)
 ReactDOM.render((
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path="/" component={CoachViewContainer}>
+      <Route path="/" component={TeamViewContainer}>
       </Route>
       <Route path="/players" component={Message} />
-      <Route path="*" component={CoachViewContainer} />
     </Router>
   </Provider>
 ), document.getElementById('root'))

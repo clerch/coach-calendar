@@ -29,3 +29,15 @@ export function clearPlayers() {
     type: 'CLEAR_PLAYERS'
   }
 }
+
+export function toggleTeamEvents() {
+  return {
+    type: 'TOGGLE_TEAM_EVENTS'
+  }
+}
+
+export function togglePlayerEvents() {
+  return {
+    type: 'TOGGLE_PLAYER_EVENTS'
+  }
+}
