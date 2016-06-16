@@ -1,6 +1,7 @@
 @import './variables';
 @import './components/player-box';
 @import './components/main-calendar';
+@import './components/calendar-control-panel';
 
 body {
   background-color: $main-bg-color;

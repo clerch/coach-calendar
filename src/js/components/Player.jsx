@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { showPlayerSchedule } from '../../actions/index'
+import { showPlayerSchedule } from '../actions/index'
+import { Link } from 'react-router'
 
 class Player extends React.Component {
   render () {
@@ -18,8 +19,8 @@ class Player extends React.Component {
           }.bind(this)
         }
       >
-        {this.props.children}
-      </li>
+        <Link to={`/players`}>{this.props.children}
+      </Link></li>
     );
   }
 }

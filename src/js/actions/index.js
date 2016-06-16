@@ -23,3 +23,9 @@ export function getPlayers(players) {
     players: players
   }
 }
+
+export function clearPlayers() {
+  return {
+    type: 'CLEAR_PLAYERS'
+  }
+}

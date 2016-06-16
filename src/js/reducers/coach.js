@@ -19,6 +19,10 @@ export default function coach(state = initialState, action) {
       return Object.assign({}, state, {
         playerList: state.playerList.concat(action.players)
       })
+    case 'CLEAR_PLAYERS':
+      return Object.assign({}, state, {
+        playerList: []
+      })
       default:
         return state
   }
