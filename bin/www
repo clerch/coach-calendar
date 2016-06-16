@@ -3,7 +3,6 @@
 /**
  * Module dependencies.
  */
-
 var app = require('../server/app');
 var debug = require('debug')('coach-calendar:server');
 var http = require('http');

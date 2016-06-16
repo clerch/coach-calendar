@@ -3,18 +3,23 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import reducer from './reducers/index'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, Link, hashHistory } from 'react-router'
 import CoachView from './containers/CoachView.jsx'
+
+const Message = React.createClass({
+  render() {
+    return <h3>Message</h3>
+  }
+})
 
 let store = createStore(reducer)
 
 ReactDOM.render((
   <Provider store={store}>
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
       <Route path="/" component={CoachView}>
-        <Route path="whatever" component={CoachView}>
-        </Route>
       </Route>
+      <Route path="/players" component={Message} />
     </Router>
   </Provider>
 ), document.getElementById('root'))

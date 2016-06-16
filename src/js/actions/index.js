@@ -16,3 +16,10 @@ export function addTeamEvent(event) {
     event: newEvent
   }
 }
+
+export function getPlayers(players) {
+  return {
+    type: 'GET_PLAYERS',
+    players: players
+  }
+}
