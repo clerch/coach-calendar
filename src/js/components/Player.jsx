@@ -19,7 +19,7 @@ class Player extends React.Component {
           }.bind(this)
         }
       >
-        <Link to={`/players`}>{this.props.children}
+        <Link to={`/editor`}>{this.props.children}
       </Link></li>
     );
   }
