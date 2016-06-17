@@ -9,7 +9,8 @@ export function addTeamEvent(event) {
   var newEvent = {
     start: event.start,
     end: event.end,
-    player: 100
+    desc: "TITS",
+    title: "TEAM_EVENT"
   }
   return {
     type: 'ADD_TEAM_EVENT',
@@ -21,6 +22,12 @@ export function getPlayers(players) {
   return {
     type: 'GET_PLAYERS',
     players: players
+  }
+}
+
+export function getPlayerCalendars() {
+  return {
+    type: 'GET_PLAYER_CALENDARS',
   }
 }
 

@@ -13,14 +13,9 @@ class Player extends React.Component {
             this.props.dispatch(showPlayerSchedule(this.props.calId))
           }.bind(this)
         }
-        onMouseLeave={
-          function() {
-            this.props.dispatch(showPlayerSchedule(null))
-          }.bind(this)
-        }
       >
-        <Link to={`/editor`}>{this.props.children}
-      </Link></li>
+        {this.props.children}
+      </li>
     );
   }
 }

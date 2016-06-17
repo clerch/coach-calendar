@@ -1,15 +1,14 @@
-.playerBox {
-  width:220px;
-  max-height:600px;
+.resourceListContainer {
+  width:230px;
+  max-height:400px;
   background-color: $box-background-one;
-  display:inline-block;
   position:relative;
-  margin-left: 20px;
+  margin:30px auto;
   box-shadow: $shadow-3;
-  vertical-align:top;
+  clear:left;
 }
 
-.playerBox ul {
+.resourceList {
   list-style-type: none;
   max-height:inherit;
   margin:0;
@@ -17,7 +16,7 @@
   padding:0;
   position:relative;
 }
-.playerBox ul li {
+.resourceList li {
   background-color:#bbf1bb;
   margin: 3px;
   padding:5px;
@@ -25,6 +24,6 @@
   font-size:18px;
 }
 
-.playerBox ul li:hover {
+.resourceList li:hover {
   background-color:grey;
 }

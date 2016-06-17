@@ -1,7 +1,7 @@
 // the entire calendar
 .rbc-calendar {
-  font-family:Futura;
   font-size:12px;
+  font-weight:200;
   background-color: @calendar-bg-color;
   padding: 15px;
   box-shadow: @shadow-3;
@@ -38,4 +38,8 @@
 
 .rbc-time-header .rbc-row:first-child {
   background-color: @btn-bg;
+}
+.rbc-event[title*="TEAM_EVENT"] {
+  background-color: grey;
+  z-index:99;
 }
