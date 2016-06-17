@@ -5,7 +5,7 @@ export default class MarkdownEditorContainer extends React.Component {
   render() {
     return(
       <div>
-      <MarkdownEditor/>
+        <MarkdownEditor.MarkdownEditor />
       </div>
     )
   }

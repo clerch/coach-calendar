@@ -24,6 +24,12 @@ export function getPlayers(players) {
   }
 }
 
+export function getPlayerCalendars() {
+  return {
+    type: 'GET_PLAYER_CALENDARS',
+  }
+}
+
 export function clearPlayers() {
   return {
     type: 'CLEAR_PLAYERS'
