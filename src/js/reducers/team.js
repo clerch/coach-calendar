@@ -9,9 +9,10 @@ var googleEvents = gEvents.map((x) => {
 });
 
 const initialState = {
-  playerSchedule: null,
   playerEvents: [],
   teamEvents: [],
+  playerEventsVisible: false,
+  teamEventsVisible: false,
   visibleEvents: {
     team: [],
     player: []
@@ -25,7 +26,7 @@ export default function team(state = initialState, action) {
     console.log(state)
 
     var visiblePlayers;
-    if (state.visibleEvents.player.length === 0) {
+    if (state.playerEventsVisible === true) {
         action.id === null
           ? visiblePlayers = state.playerEvents
           : visiblePlayers = state.playerEvents.filter((x) => x.player === action.id)
@@ -33,7 +34,6 @@ export default function team(state = initialState, action) {
         visiblePlayers = []
       }
       return Object.assign({}, state, {
-        // playerSchedule: action.id
         visibleEvents: {
           team: state.visibleEvents.team,
           player: visiblePlayers
@@ -43,31 +43,31 @@ export default function team(state = initialState, action) {
       return Object.assign({}, state, {
         teamEvents: state.teamEvents.concat(action.event),
         visibleEvents: {
-          team: state.visibleEvents.team.length === 0
-            ? []
-            : state.teamEvents.concat(action.event),
+          team: state.teamEventsVisible === true
+            ? state.teamEvents.concat(action.event)
+            : [],
           player: state.visibleEvents.player
         }
       })
     case 'TOGGLE_TEAM_EVENTS':
       return Object.assign({}, state, {
         visibleEvents: {
-          team: state.visibleEvents.team.length === 0
-            ? state.teamEvents
-            : [],
+          team: state.teamEventsVisible === true
+            ? []
+            : state.teamEvents,
           player: state.visibleEvents.player
-        }
+        },
+        teamEventsVisible: !state.teamEventsVisible
       })
     case 'TOGGLE_PLAYER_EVENTS':
-      var visiblePlayers;
-
       return Object.assign({}, state, {
         visibleEvents: {
           team: state.visibleEvents.team,
-          player: state.visibleEvents.player.length === 0
-            ? state.playerEvents
-            : []
-        }
+          player: state.playerEventsVisible === true
+            ? []
+            : state.playerEvents
+        },
+        playerEventsVisible: !state.playerEventsVisible
       })
     case 'GET_PLAYERS':
       return Object.assign({}, state, {
