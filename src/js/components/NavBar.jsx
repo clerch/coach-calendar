@@ -5,7 +5,7 @@ export default class NavBar extends React.Component {
     return(
       <nav
         className="navBar"
-      >
+      >Coach View
       </nav>
     )
   }
