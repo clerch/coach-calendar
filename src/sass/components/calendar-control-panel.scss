@@ -1,21 +1,28 @@
 .calendarControlButton {
   box-sizing:border-box;
   background-color:$box-background-one;
-  border: 1px solid black;
   display:inline-block;
   height:100px;
+  line-height:100px;
+  vertical-align: middle;
   position:relative;
+  -webkit-user-select: none;
   width:150px;
   text-align: center;
-  
+  cursor:default;
+  font-weight:200;
+  font-size:18px;
+}
+
+.calendarControlButton:active {
+  background-color:#bbf1bb;
 }
 
 .calendarControlPanel {
   background-color:$box-background-one;
-  display:inline-block;
+  box-shadow: $shadow-3;
   height:100px;
-  margin-left:$component-spacing;
   position:relative;
-  width: 300px;
   vertical-align:top;
+  width: 300px;
 }

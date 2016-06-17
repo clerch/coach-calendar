@@ -1,7 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux'
 import Player from './Player.jsx';
+import { showPlayerSchedule } from '../actions/index'
 
-export default class PlayerList extends React.Component {
+class PlayerList extends React.Component {
   render () {
     var playerNodes = this.props.data.map(function(player) {
       return (
@@ -14,9 +16,18 @@ export default class PlayerList extends React.Component {
       );
     }.bind(this));
     return(
-      <ul className="playerList">
+      <ul
+        className="playerList"
+        onMouseLeave={
+          function() {
+            this.props.dispatch(showPlayerSchedule(null))
+          }.bind(this)
+        }
+        >
         {playerNodes}
       </ul>
     );
   }
 }
+
+export default connect()(PlayerList)

@@ -2,8 +2,10 @@
 @import './components/player-box';
 @import './components/main-calendar';
 @import './components/calendar-control-panel';
+@import './components/navbar';
+@import './components/resource-list';
+@import './components/right-panel';
 
 body {
   background-color: $main-bg-color;
-  padding:20px;
 }
